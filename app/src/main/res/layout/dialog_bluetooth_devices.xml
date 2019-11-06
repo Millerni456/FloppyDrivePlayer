@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Paired Devices"
+            android:textSize="12pt"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorHeading"
+            android:padding="6dp" />
+        <ListView
+            android:id="@+id/list_paired_devices"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Other Devices"
+            android:textSize="12pt"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorHeading"
+            android:padding="6dp" />
+        <ListView
+            android:id="@+id/list_other_devices"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_scan"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Scan for Devices"
+            android:textSize="10pt" />
+        <ProgressBar
+            android:id="@+id/progress_scanning"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:indeterminate="true" />
+    </RelativeLayout>
+</LinearLayout>

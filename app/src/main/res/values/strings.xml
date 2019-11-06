@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Floppy Drive Player</string>
+    <string name="action_connect_secure">Connect to a Device - Secure</string>
+    <string name="action_connect_insecure">Connect to a Device - Insecure</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_settings">Settings</string>
+</resources>
